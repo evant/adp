@@ -1,0 +1,29 @@
+[package]
+name = "adp"
+version = "0.1.0"
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+process_control = "3.1.0"
+named_semaphore = { path = "../named_semaphore" }
+fs2 = "0.4.3"
+anyhow = "1.0.44"
+thiserror = "1.0.30"
+dirs = "4.0.0"
+tracing = "0.1.29"
+tracing-subscriber = { version = "0.2.25", default-features = false, features = ["fmt", "ansi"] }
+retry = "1.3.0"
+sysinfo = "0.20.5"
+ambassador = "0.2.1"
+
+[dev-dependencies]
+temp_testdir = "0.2.3"
+function_name = "0.2.0"
+try-block = "0.1.0"
+derive_builder = "0.10.2"
+
+[profile.release]
+lto = true
+codegen-units = 1
