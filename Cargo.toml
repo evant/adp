@@ -7,7 +7,7 @@ edition = "2018"
 
 [dependencies]
 process_control = "3.1.0"
-named_semaphore = { path = "../named_semaphore" }
+named-semaphore = "0.1.0"
 fs2 = "0.4.3"
 anyhow = "1.0.44"
 thiserror = "1.0.30"

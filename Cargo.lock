@@ -12,7 +12,7 @@ dependencies = [
  "dirs",
  "fs2",
  "function_name",
- "named_semaphore",
+ "named-semaphore",
  "process_control",
  "retry",
  "sysinfo",
@@ -331,8 +331,10 @@ dependencies = [
 ]
 
 [[package]]
-name = "named_semaphore"
+name = "named-semaphore"
 version = "0.1.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "f0957164364ec8ac166bc1cf9f7724f6656546a4060cddb69fb108d970d65938"
 dependencies = [
  "errno",
  "libc",
